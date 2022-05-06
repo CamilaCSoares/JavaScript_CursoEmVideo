@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Curso,JavaScript,Gustavo,Guanabara">
+    <meta name="description" content="Site feito no curso de JavaScript do Gustavo Guanabara (curso em vídeo)">
+    <meta name="author" content="Camila Carla Soares">
+
+    <title>Document</title>
+
+    <Style>
+        body {
+            font: normal 20pt arial;
+        }
+    </Style>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('Qual é o seu nome? ')
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        //document.write <- escreve no corpo da página , ${nome.length} <- quantidade de letras na variável nome
+        // writeln <- pula a linha, mas aqui precisou do <br>
+        // <strong> <- negrito
+
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        // ${nome.toUpperCase()} <- coloca em maiúsculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+        // ${nome.toLowerCase()} <- coloca em minúsculas
+
+        // n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+
+        // n1.toLocaleString <- string localizada pra parte do mundo? 
+        // ('pt-br', <- em português
+        // {style: 'currency', <- mostrar em valor monetário
+        // currency: 'BRL'}) <- em real 
+    </script>
+
+</body>
+</html>
